@@ -1,12 +1,12 @@
 require("dotenv").config()
 
-let missing = ["PORT", "DATABASE_URL"].filter(
-  key => process.env[key] === undefined
-)
+// let missing = ["PORT", "DATABASE_URL"].filter(
+//   key => process.env[key] === undefined
+// )
 
-if (missing.length > 0) {
-  throw Error(`missing environment variables for ${missing.join(", ")}`)
-}
+// if (missing.length > 0) {
+//   throw Error(`missing environment variables for ${missing.join(", ")}`)
+// }
 
 const deployment = {
   prod: {
