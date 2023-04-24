@@ -11,7 +11,7 @@ require("dotenv").config()
 const deployment = {
   prod: {
     connectionString:
-      "postgres://pokequiz_user:hq0k9ErHGq2gL1fbbRi1sWBiWQTSwbmX@dpg-ch2uevt269v61ffhh5dg-a/pokequiz",
+      "postgres://pokequiz_user:hq0k9ErHGq2gL1fbbRi1sWBiWQTSwbmX@dpg-ch2uevt269v61ffhh5dg-a.singapore-postgres.render.com/pokequiz",
   },
   dev: {
     connectionString: process.env.DATABASE_URL,
