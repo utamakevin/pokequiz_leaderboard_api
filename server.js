@@ -26,14 +26,14 @@ app.post("/api/pokequiz/wordWallLeaderboard", (req, res, next) => {
     .catch(next)
 })
 
-app.put("api/pokequiz/wordWallLeaderboard/:id", (req, res, next) => {
+app.put("/api/pokequiz/wordWallLeaderboard/:id", (req, res, next) => {
   WordWallLeaderboard.update(req.params.id, req.body.username, req.body.score)
     .then(record => res.json(record))
     .catch(next)
 })
 
 app.delete("/api/pokequiz/wordWallLeaderboard/:id", (req, res, next) => {
-  const { id } = req.params.id
+  const { id } = req.params
 
   WordWallLeaderboard.destroy(id).catch(next)
 })
